@@ -32,7 +32,7 @@ issue_id_colname = df.columns[1]
 # === Download Loop ===
 # for _, row in tqdm(df.iterrows(), total=len(df)):     # Full loop
 # for _, row in tqdm(df.iloc[:10].iterrows(), total=10):   # 1st test
-for _, row in tqdm(df.iloc[260:280].iterrows(), total=20):
+for _, row in tqdm(df.iloc[2093:3879].iterrows(), total=1786):
 
     issue_id = str(row[issue_id_colname])
     attachments_raw = row[attachments_col]
